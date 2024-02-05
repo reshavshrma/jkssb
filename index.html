@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKSSB Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Your page content goes here -->
+
+    <h1 style="text-align: center; font-weight: bold;"></h1>
+    
+    <div class="container">
+        <h2>Government of Jammu and Kashmir</h2>
+        <h2>Jammu Kashmir Services Selection Board</h2>
+        <h2>__________________________________________________________</h2>
+        <h2>JK Police Sub-Inspector Application Form</h2>
+        <form id="registrationForm">
+
+            <!-- Form fields will go here -->
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+            <!-- Rest of the form fields -->
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+            <label for="fathersFirstName">Father's Name:</label>
+            <input type="text" id="fathersFirstName" name="fathersFirstName" placeholder="Enter your father's name" required>
+
+            <label for="mothersFirstName">Mother's Name:</label>
+            <input type="text" id="mothersFirstName" name="mothersFirstName" placeholder="Enter your mother's name" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="None">None</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="Category">Category:</label>
+            <select id="Category" name="Category" required>
+                <option value="None">None</option>
+                <option value="General">General</option>
+                <option value="None">None</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="EWS">EWS</option>
+                <option value="OBC">OBC</option>
+            </select>
+
+            <!-- Include this snippet in your form where educational qualifications are needed -->
+
+            <div style="display: flex; flex-direction: column; align-items: center;">
+
+            <!-- 10th Qualification -->
+            <div style="display: flex; margin-bottom: 8px;">
+            <label for="qualification10">SSC Qualification:</label>
+            <select id="qualification10" name="qualification10" required>
+                <option value="None">None</option>
+                <option value="SSC">SSC</option>
+                <option value="CBSE">SSC or Equivalent</option>
+                <!-- Add more options as needed -->
+                </select>
+
+            <label for="passingYear10" style="margin-left: 10px;">Passing Year:</label>
+            <input type="text" id="passingYear10" name="passingYear10" required>
+
+            <label for="cgpa10" style="margin-left: 10px;"> SSC CGPA:</label>
+            <input type="text" id="cgpa10" name="cgpa10" required>
+            </div>
+
+            <!-- 12th Qualification -->
+            <div style="display: flex; margin-bottom: 8px;">
+            <label for="qualification12">HSC Qualification:</label>
+            <select id="qualification12" name="qualification12" required>
+                <option value="None">None</option>
+                <option value="HSC">HSC</option>
+                <option value="ISC">HSC or Equivalent</option>
+            <   <!-- Add more options as needed -->
+                </select>
+
+            <label for="passingYear12" style="margin-left: 10px;">Passing Year:</label>
+            <input type="text" id="passingYear12" name="passingYear12" required>
+
+            <label for="cgpa12" style="margin-left: 10px;" >HSC CGPA:</label>
+            <input type="text" id="cgpa12" name="cgpa12" required>
+            </div>
+
+            <!-- Graduation Qualification -->
+            <div style="display: flex; margin-bottom: 8px;">
+            <label for="qualificationGraduation">Graduation Qualification:</label>
+            <select id="qualificationGraduation" name="qualificationGraduation" required>
+                <option value="None">None</option>
+                <option value="BSc">BSc</option>
+                <option value="BA">BA</option>
+                <option value="BCom">BCom</option>
+                <!-- Add more options as needed -->
+                </select>
+
+            <label for="passingYearGraduation" style="margin-left: 10px;" >Passing Year:</label>
+            <input type="text" id="passingYearGraduation" name="passingYearGraduation" required>
+
+            <label for="cgpaGraduation" style="margin-left: 10px;" >Graduation CGPA:</label>
+            <input type="text" id="cgpaGraduation" name="cgpaGraduation" required>
+         </div>
+
+    </div>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" placeholder="Enter your Date of Birth" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your full address" required></textarea>
+
+            <label for="examCenter">Choose Examination Center:</label>
+            <select id="examCenter" name="examCenter" required>
+                <option value="None">None</option>
+                <option value="jammu-kashmir">Jammu Kashmir</option>
+                <option value="delhi">Delhi</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="punjab">Punjab</option>
+                <option value="haryana">Haryana</option>
+                <option value="chandigarh">Chandigarh</option>
+                <option value="himachalpradesh">Himachal Pradesh</option>
+                <option value="uttarpradesh">Uttar Pradesh</option>
+                <option value="himachalpradesh">Himachal Pradesh</option>
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter the same password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

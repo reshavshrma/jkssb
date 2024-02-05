@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220vh;
+    background-color: #4a04d7ab;
+}
+
+* {
+    font-weight: bold; /* Make all text bold */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align content to the left */
+    width: 60%;
+    margin-top: 20px; /* Add margin to the top */
+    margin-left: 20%; /* Create a 25% gap from the left */
+    margin-right: 20%; /* Create a 25% gap from the right */
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%; /* Set label width to 100% */
+    color: #4407e9; /* Blue color for labels */
+}
+
+input, select, textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto; /* Center the submit button */
+    display: block; /* Make it a block-level element for centering */
+}
+
+/* Style the checkbox */
+input[type="checkbox"] {
+    margin-top: 8px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+input[type="checkbox"]:checked + .checkmark {
+    background-color: #4caf50;
+}
+
+/* Add these styles for better responsiveness */
+@media screen and (max-width: 600px) {
+    input, select, textarea, label {
+        width: 100%;
+        display: block;
+    }
+}
