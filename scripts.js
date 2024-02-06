@@ -54,6 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // You can now proceed with form submission or additional logic
 
-        alert("Form submitted! Thanks for visiting! You will be notified by e-mail soon."); // For demonstration purposes
+        alert("Form submitted! Thanks for visiting! You will be notified by e-mail soon further details."); // For demonstration purposes
     });
 });

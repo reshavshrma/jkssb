@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 220vh;
+    height: 270vh;
     background-color: #4a04d7ab;
 }
 
@@ -15,8 +15,8 @@ body {
 
 .container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 40px;
+    border-radius: 9px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left; /* Align content to the left */
     width: 60%;
@@ -25,8 +25,11 @@ body {
     margin-right: 20%; /* Create a 25% gap from the right */
 }
 
-h2 {
+h2{
     text-align: center;
+    color: #ec0909;
+    font-size: 17px;
+    margin: 10px 0;
 }
 
 label {
@@ -44,11 +47,11 @@ input, select, textarea {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #149e18;
     color: #fff;
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     margin: 0 auto; /* Center the submit button */
     display: block; /* Make it a block-level element for centering */
@@ -78,4 +81,27 @@ input[type="checkbox"]:checked + .checkmark {
         width: 100%;
         display: block;
     }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+.button-container button {
+    border-radius: 5px;
+    margin: 0 5px; /* Add some margin between buttons for spacing */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.checkbox-container label {
+    margin-left: 5px; /* Add some margin between checkbox and label */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 200px; /* Add margin to the right of the checkbox */
 }

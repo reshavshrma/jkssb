@@ -13,10 +13,23 @@
     <h1 style="text-align: center; font-weight: bold;"></h1>
     
     <div class="container">
-        <h2>Government of Jammu and Kashmir</h2>
-        <h2>Jammu Kashmir Services Selection Board</h2>
-        <h2>__________________________________________________________</h2>
-        <h2>JK Police Sub-Inspector Application Form</h2>
+        
+        <div style="display: flex; align-items: center;">
+            <img src="jkssb.jpg" alt="JKSSB" style="width: 80px; margin-left: 10px; margin-left: 10px;">
+            <div style="margin-left: 60px;">
+                <div style="font-weight: bold; font-size: 26px; margin-left: 50px;">Government of Jammu and Kashmir</div>
+                <div style="font-weight: bold; font-size: 26px; margin-left: 8px;">Jammu Kashmir Services Selection Board</div>
+
+                <div style="font-weight: bold; font-size: 20px; margin-left: 0px; margin-right:60px;">-----------------------------------------------------------------------------------</div>
+                <div style="font-weight: bold; font-size: 24px; margin-left: 25px;" > JK Police Sub-Inspector Application Form</div>
+
+                <h4 style="font-weight: bold; font-size: 24px; margin-left: 25px;" ></h4>
+
+                <div style="font-weight: bold; font-size: 24px; margin-left: 25px;" >                                                       </div>
+
+            </div>
+        </div>
+        
         <form id="registrationForm">
 
             <!-- Form fields will go here -->
@@ -100,6 +113,7 @@
                 <option value="BSc">BSc</option>
                 <option value="BA">BA</option>
                 <option value="BCom">BCom</option>
+                <option value ="BTech">BTech</option>
                 <!-- Add more options as needed -->
                 </select>
 
@@ -144,7 +158,33 @@
             <label for="confirmPassword">Confirm Password:</label>
             <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter the same password" required>
 
-            <button type="submit">Submit</button>
+            <label for="candidateimage">Candidate's Image: </label>
+            <input type="file" id="candidateimage" name="candidateimage" accept="image/jpeg/png" required>
+
+            <label for="candidatesign">Candidate's Signature: </label>
+            <input type="file" id="candidatesign" name="candidatesign" accept="image/jpeg/png" required>
+
+            <h2>"Statement: I hereby confirm my awareness of the aforementioned details and 
+                understand that any inaccuracies may render me liable under the law. 
+                It is crucial to ensure the accuracy of the information provided.
+                Therefore, I acknowledge the importance of reviewing and verifying
+                 the content before confirming my understanding and agreement."</h2>
+
+
+            <div class="checkbox-container">
+                <label for="declarationCheckbox">Are you agree to the above statement:</label>
+                <input type="checkbox" id="declarationCheckbox" name="declarationCheckbox" required>
+            </div>
+            
+
+            
+            <div class="button-container">
+                <button type="preview">Preview</button>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset  </button>
+            </div>
+            
+
         </form>
     </div>
     <script src="script.js"></script>
