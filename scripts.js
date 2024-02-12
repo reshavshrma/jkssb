@@ -47,6 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        // Check for a valid mobile number format
+        const mobileRegex = /^[0-9]{10}$/;
+        if (!mobileRegex.test(mobileNumber)) {
+            alert("Please enter a valid 10-digit mobile number.");
+            return;
+        }
+
         if (password !== confirmPassword) {
             alert("Passwords do not match. Please enter again.");
             return;
