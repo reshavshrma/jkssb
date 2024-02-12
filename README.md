@@ -1,4 +1,3 @@
-Here's the corrected version:
 
 **BASIC DETAILS OF THE PROJECT:** This is a very basic Application Form for JK Police Sub-Inspector Recruitment, in which you can add an image, signature, and domicile certificate.
 
